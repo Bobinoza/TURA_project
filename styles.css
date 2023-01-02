@@ -394,8 +394,8 @@ form textarea:focus::placeholder {
 }
 
 form button {
-  background: hsl(252 40.1% 22.5%);;
-  color: hsl(250 95.0% 76.8%);;
+  background: hsl(252 40.1% 22.5%);
+  color: hsl(250 95.0% 76.8%);
   border: none;
   padding-top: 1rem;
   padding-bottom: 1rem;

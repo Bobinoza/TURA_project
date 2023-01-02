@@ -36,7 +36,11 @@
 }
 
 .on-scroll {
-  background-color: rgba(59, 59, 59, 0.6);
+  background: rgba(255, 255, 255, 0.036);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .navbar {
@@ -58,7 +62,7 @@
   font-weight: 900;
   line-height: 1.5rem;
   letter-spacing: 0.5rem;
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   text-transform: uppercase;
 }
 
@@ -67,7 +71,7 @@
   padding: 2rem 0;
   overflow: hidden;
 
-  box-shadow: var(--shadow-medium);
+  box-shadow: var(--shadow-medium);  /* arrumar isso aqui*/
   transition: all 0.4s ease-in-out;
 }
 
@@ -83,7 +87,7 @@
 
 .menu ul li .menu-link {
   text-decoration: none;
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
 }
@@ -105,7 +109,6 @@ main {
 
 
   height: 100vh;
-  width: 100vw;
 
   display: grid;
   grid-template-columns: max-content 1fr max-content;
@@ -142,7 +145,7 @@ main {
 
 
 .d2 h2 {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
   font-size: 15rem;
@@ -150,7 +153,7 @@ main {
 }
 
 .d2 p:first-child {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   text-align: start;
   font-size: 1.6rem;
@@ -159,7 +162,7 @@ main {
 }
 
 .d2 p:last-child {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
 
   font-size: 1.6rem;
@@ -188,18 +191,78 @@ main {
   height: 1px;
 
   transform: rotate(90deg);
-  background-color: #DDDDDD;
+  background-color: hsl(210 6.0% 93.0%);
 
 }
 
 .d3 p {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   letter-spacing: 1rem;
   transform: rotate(90deg);
   margin-bottom: 6rem;
+}
+
+/* SECTION x2 */
+.x2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.d2_wrapper_text_content {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  color: hsl(210 6.0% 93.0%);
+  max-width: 30rem;
+
+  
+  justify-content: center;
+  align-self: center;
+}
+
+.d2_wrapper_text_content h2 {
+  margin-bottom: 1rem;
+  font-weight:700;
+  font-size: 2rem;
+}
+
+.d2_wrapper_text_content p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(246, 135, 8) !important; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 115, 15) !important;
 }
 
 /* SECTION x3 FORM */
@@ -237,13 +300,28 @@ main {
 }
 
 .texts_header_form {
+  display: flex;
+  flex-direction: column;
+
   font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
-  color: #DDDDDD;
+  
+  color: hsl(210 6.0% 93.0%);
 }
 
-.xxxxxxxxxx {
+.first_h2_texts_header_form {
+  margin-bottom: 1rem;
+}
 
+.content_bottom_text_form {
+ margin-top: 2rem;
+}
+
+.content_bottom_text_form p:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.content_bottom_text_form p:nth-child(4) {
+  margin-bottom: 1rem;
 }
 
 form {
@@ -261,7 +339,7 @@ form {
 }
 
 form h2 {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 800;
   text-align: center;
@@ -277,7 +355,7 @@ form input {
   border: 0;
   width: 100%;
   border-bottom: 1px solid #DDDDDD;
-  color: white;
+  color: hsl(210 6.0% 93.0%);
 }
 
 form input:hover,
@@ -286,23 +364,33 @@ form textarea:hover {
 }
 
 form input::placeholder {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
+}
+
+form input:focus {
+  border-color: hsl(252 56.0% 57.5%);
+  transition: 0.3s;
 }
 
 form textarea {
   background: transparent;
   border: none;
   outline: none;
-  color: white;
+  color: hsl(210 6.0% 93.0%);
 }
 
 form textarea::placeholder {
-  color: #DDDDDD;
+  color: hsl(210 6.0% 93.0%);
   border-bottom: 1px solid #DDDDDD;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
+}
+
+form textarea:focus::placeholder {
+  border-color: hsl(252 56.0% 57.5%);
+  transition: 0.3s;
 }
 
 form button {

@@ -416,6 +416,8 @@ form button:hover {
 }
 
 
+
+
 @media screen and (max-width: 760px) {
   .ph-list {
     visibility: visible;
@@ -543,7 +545,7 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
   }
 
   .d2 {
-    margin-top: 17rem;
+    margin-top: 70%;
   }
 
   .d2 h2 {
@@ -559,11 +561,12 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
 
   .d3::before {
     width: 2rem;
+    margin-right: -2rem;
   }
 
   .d3 p {
     font-size: 1rem;
-    margin-bottom: 5rem;
+    margin-right: -2rem;
   }
 
   /**/
@@ -582,6 +585,15 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
   .form_wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+}
+
+/* DISPOSITIVOS PEQUENOS */
+@media screen and (max-height: 700px) {
+  .d2 {
+    margin-top: 50%;
+    
   }
 
 }

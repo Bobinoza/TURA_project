@@ -1,22 +1,21 @@
-const navbarMenu = document.getElementById("menu");
-const burgerMenu = document.getElementById("burger");
-const headerMenu = document.getElementById("header");
+/* abre e fecha o menu quando clicar no ícone */
+const nav = document.querySelector('#header nav')
+const toggle = document.querySelectorAll('nav .toggle')
 
-// Open Close Navbar Menu on Click Burger
-if (burgerMenu && navbarMenu) {
-  burgerMenu.addEventListener("click", () => {
-    burgerMenu.classList.toggle("is-active");
-    navbarMenu.classList.toggle("is-active");
-  });
-}
+for (const element of toggle) {
+  element.addEventListener('click', function () {
+    nav.classList.toggle('show')
+  })
+};
 
-// Close Navbar Menu on Click Menu Links
-document.querySelectorAll(".menu-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    burgerMenu.classList.remove("is-active");
-    navbarMenu.classList.remove("is-active");
-  });
-});
+/* quando clicar em um item no menu, esconder o menu */
+const links = document.querySelectorAll('nav ul li a')
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    nav.classList.remove('show')
+  })
+};
 
 // Change Header Background on Scrolling
 window.addEventListener("scroll", () => {

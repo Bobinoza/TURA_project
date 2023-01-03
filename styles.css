@@ -15,11 +15,15 @@
   --colors-violet8: hsl(250 51.8% 51.2%);
   --colors-violet9: hsl(252 56.0% 57.5%);
   --colors-violet10: hsl(251 63.2% 63.2%);
-  --colors-violet11: hsl(250 95.0% 76.8%); 
+  --colors-violet11: hsl(250 95.0% 76.8%);
 }
 
 /* NAV BAR */
-
+.ph-list,
+.ph-x {
+  visibility: hidden;
+  opacity: 0;
+}
 
 .header {
   position: fixed;
@@ -65,13 +69,14 @@
   color: hsl(210 6.0% 93.0%);
   text-transform: uppercase;
 }
-
+        
 .menu {
   width: 100%;
   padding: 2rem 0;
   overflow: hidden;
 
-  box-shadow: var(--shadow-medium);  /* arrumar isso aqui*/
+  box-shadow: var(--shadow-medium);
+  /* arrumar isso aqui*/
   transition: all 0.4s ease-in-out;
 }
 
@@ -133,6 +138,7 @@ main {
 }
 
 .d1 a i {
+  color: hsl(210 6.0% 93.0%);
   font-size: 1.2rem;
 }
 
@@ -217,14 +223,14 @@ main {
   color: hsl(210 6.0% 93.0%);
   max-width: 30rem;
 
-  
+
   justify-content: center;
   align-self: center;
 }
 
 .d2_wrapper_text_content h2 {
   margin-bottom: 1rem;
-  font-weight:700;
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -258,7 +264,7 @@ main {
 }
 
 .swiper-pagination-bullet {
-  background: rgb(246, 135, 8) !important; 
+  background: rgb(246, 135, 8) !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -304,7 +310,7 @@ main {
   flex-direction: column;
 
   font-family: 'Nunito Sans', sans-serif;
-  
+
   color: hsl(210 6.0% 93.0%);
 }
 
@@ -313,7 +319,7 @@ main {
 }
 
 .content_bottom_text_form {
- margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .content_bottom_text_form p:nth-child(2) {
@@ -407,4 +413,175 @@ form button {
 form button:hover {
   background-color: hsl(252 42.2% 26.2%);
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 760px) {
+  .ph-list {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .ph-x {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #header {
+    display: block;
+    /* width: 100vw; */
+    z-index: 100000;
+    padding-left: 0;
+    padding-right: 0;
+    /* background-color: yellow; */
+  }
+
+  .container_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    /* top: -20rem; */
+    left: -20rem;
+    padding: 0;
+  }
+  
+  nav .menu ul { /*Pra nao piscar, ficar desaparecido até que de fato eu clique em algo.*/
+    display: none;
+  }
+
+  /* Mostrar Menu */
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background-color: hsla(200, 7%, 9%, 1);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    
+    justify-content: center;
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  nav.show .menu .menu-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 14rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  nav.show .menu ul li{
+    margin: 0;
+  }
+
+  nav.show .menu .menu-link {
+    font-size: 2rem;
+  }
+
+  /*=== TOGGLE MENU ===*/
+.toggle {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .ph-list {
+  color: white;
+}
+
+nav.show .ph-list {
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .ph-x {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: -13rem; /* efeito do X subindo */
+  right: 8.5rem;
+  transition: .2s;
+}
+
+nav.show div.ph-x {  /*Quando .show estiver ativo*/
+  visibility: visible;
+  opacity: 1;
+  left: 21rem; /* efeito do X subindo */
+}
+
+
+
+  /* Seaction 1 */
+  .x {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .d1 {
+    position: absolute;
+    bottom: 2rem;
+
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .d2 {
+    margin-top: 17rem;
+  }
+
+  .d2 h2 {
+    font-size: 5rem;
+  }
+
+  .d3 {
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    margin-bottom: 0;
+  }
+
+  .d3::before {
+    width: 2rem;
+  }
+
+  .d3 p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  /**/
+ 
+  
+  
+
+
+
+  /* FORM */
+
+  .x3 {
+    
+  }
+  
+  .form_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

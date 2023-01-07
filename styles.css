@@ -288,7 +288,7 @@ main {
 
 
   height: 100vh;
-  display: flex;
+  /* display: flex; */
 
 }
 
@@ -306,8 +306,8 @@ main {
 }
 
 .texts_header_form {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 
   font-family: 'Nunito Sans', sans-serif;
 
@@ -331,9 +331,9 @@ main {
 }
 
 form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem; */
 
 
   /* From https://css.glass */
@@ -406,7 +406,7 @@ form button {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 5px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   transition: background-color 75ms ease;
 }
 
@@ -648,8 +648,7 @@ form button:hover {
   /* FORM */
 
   .x3 {
-   
-
+    
   }
 
   .form_wrapper {
@@ -665,8 +664,9 @@ form button:hover {
   }
 
   .first_h2_texts_header_form {
-    text-align: center;
+    /* text-align: center; */
   }
+
 }
 
 /* DISPOSITIVOS PEQUENOS */
@@ -674,5 +674,4 @@ form button:hover {
   .d2 {
     margin-top: 50%;
   }
-
 }

@@ -569,9 +569,28 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
     margin-right: -2rem;
   }
 
-  /**/
- 
+  /* FOTOS */
+  .x2 {
+    display: none;
+    opacity: 0;
+  }
+
+  .section_pictures_mobile{
+    height: 70rem;
+    background-color: red;
+    padding-top: 2rem;
+  }
+
+  .mySwiperMobile {
+    height: 32rem;
+    width: 19rem;
+  }
+
   
+
+  
+
+
   
 
 
@@ -579,7 +598,6 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
   /* FORM */
 
   .x3 {
-    
   }
   
   .form_wrapper {
@@ -593,7 +611,6 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
 @media screen and (max-height: 700px) {
   .d2 {
     margin-top: 50%;
-    
   }
 
 }

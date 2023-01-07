@@ -29,7 +29,7 @@
   <header class="header" id="header">
     <nav class="container_nav">
       <a href="./index.html" class="brand">TU<br> RA</a>
-      
+
       <div class="menu" id="menu">
         <ul class="menu-inner">
           <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -109,6 +109,53 @@
       </div>
     </section>
 
+    <section class="section_pictures_mobile">
+      <!-- Swiper -->
+      <div class="swiper mySwiperMobile">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/c6d075cd-a5e8-4f0b-a3fe-8b8b54ddc872/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/8f5faed3-3f16-40c6-ae32-546ae5f396c1/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/7d9b513b-78b9-496e-9381-08dd7edcfd26/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/99c60acf-ba0a-4492-aa62-0f9a062f7ee9/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/71bda4c9-5644-4ed2-86cf-c806a948a1db/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/d5b9a1db-ce2e-4c8e-91b9-ae4f5c8a0a92/grid_0_384_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/b3035dab-aada-420b-9413-88b41ab75d99/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/f1d47147-3531-4e66-8caa-417f0537b27a/grid_0_640_N.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.midjourney.com/e70a2960-c3fc-405b-8a9a-4331101d664c/grid_0_640_N.webp" />
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="d2_wrapper_text_content">
+        <h2>
+          Title
+        </h2>
+        <p>
+          Text here as as as here for my money and the beast
+          Text here as as as here for my money and the beast
+        </p>
+      </div>
+    </section>
+
     <section class="x3">
       <div class="form_wrapper">
         <div class="texts_header_form">
@@ -147,7 +194,7 @@
       </div>
     </section>
   </main>
-  
+
   <script src="./main.js"></script>
 
   <!-- Swiper JS -->
@@ -173,9 +220,14 @@
     });
   </script>
 
+  <!-- Initialize Swiper CARDS MOBILE -->
+  <script>
+    var swiper = new Swiper(".mySwiperMobile", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
 </body>
+
 </html>
-
-
-
-

@@ -579,15 +579,17 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
     height: 70rem;
     background-color: red;
     padding-top: 2rem;
+    contain: content;
   }
 
   .mySwiperMobile {
     height: 28rem;
     width: 19rem;
+    
   }
 
   .swiper-wrapper {
-    box-sizing: content-box;
+    
   }  
 
   

@@ -40,11 +40,11 @@
 }
 
 .on-scroll {
-  background: rgba(255, 255, 255, 0.036);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  background: rgba(255, 255, 255, 0.096); 
+  /* backdrop-filter: blur(1px); */
+  /* -webkit-backdrop-filter: blur(1px);
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0); */
 }
 
 .navbar {
@@ -624,6 +624,11 @@ form button:hover {
   .form_wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .texts_header_form {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
 }

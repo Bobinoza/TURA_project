@@ -1,6 +1,7 @@
 /* abre e fecha o menu quando clicar no ícone */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
+const headerMenu = document.querySelector('.header')
 
 for (const element of toggle) {
   element.addEventListener('click', function () {
@@ -19,7 +20,7 @@ for (const link of links) {
 
 // Change Header Background on Scrolling
 window.addEventListener("scroll", () => {
-  if (this.scrollY >= 85) {
+  if (this.scrollY >= 65) {
     headerMenu.classList.add("on-scroll");
   } else {
     headerMenu.classList.remove("on-scroll");

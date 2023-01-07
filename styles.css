@@ -586,15 +586,18 @@ form button:hover {
   .section_pictures_mobile {
     display: flex;
     flex-direction: column;
-    height: 50rem;
+    /* height: 50rem; */
     padding-top: 2rem; 
     contain: content; 
   }
 
   .mySwiperMobile {
-    height: 28rem;
+    height: 24rem;
     width: 19rem;
+  }
 
+  .swiper-slid img {
+    object-fit: contain;
   }
 
   .section_pictures_mobile_texts {
@@ -624,6 +627,7 @@ form button:hover {
   .form_wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: unset;
   }
 
   .texts_header_form {
@@ -631,6 +635,9 @@ form button:hover {
     padding-right: 2rem;
   }
 
+  .first_h2_texts_header_form {
+    text-align: center;
+  }
 }
 
 /* DISPOSITIVOS PEQUENOS */

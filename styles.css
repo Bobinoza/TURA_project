@@ -69,7 +69,7 @@
   color: hsl(210 6.0% 93.0%);
   text-transform: uppercase;
 }
-        
+
 .menu {
   width: 100%;
   padding: 2rem 0;
@@ -415,6 +415,10 @@ form button:hover {
   cursor: pointer;
 }
 
+.section_pictures_mobile {
+  display: none;
+}
+
 
 
 
@@ -423,7 +427,7 @@ form button:hover {
     visibility: visible;
     opacity: 1;
   }
-  
+
   .ph-x {
     visibility: visible;
     opacity: 1;
@@ -457,8 +461,9 @@ form button:hover {
     left: -20rem;
     padding: 0;
   }
-  
-  nav .menu ul { /*Pra nao piscar, ficar desaparecido até que de fato eu clique em algo.*/
+
+  nav .menu ul {
+    /*Pra nao piscar, ficar desaparecido até que de fato eu clique em algo.*/
     display: none;
   }
 
@@ -471,9 +476,9 @@ form button:hover {
     width: 100vw;
 
     display: flex;
-    
+
     justify-content: center;
-    
+
 
     position: absolute;
     top: 0;
@@ -489,7 +494,7 @@ form button:hover {
     text-align: center;
   }
 
-  nav.show .menu ul li{
+  nav.show .menu ul li {
     margin: 0;
   }
 
@@ -498,42 +503,45 @@ form button:hover {
   }
 
   /*=== TOGGLE MENU ===*/
-.toggle {
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+  .toggle {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 
-nav .ph-list {
-  color: white;
-}
+  nav .ph-list {
+    color: white;
+  }
 
-nav.show .ph-list {
-  visibility: hidden;
-  opacity: 0;
-}
+  nav.show .ph-list {
+    visibility: hidden;
+    opacity: 0;
+  }
 
-nav .ph-x {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  left: -13rem; /* efeito do X subindo */
-  right: 8.5rem;
-  transition: .2s;
-}
+  nav .ph-x {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -13rem;
+    /* efeito do X subindo */
+    right: 8.5rem;
+    transition: .2s;
+  }
 
-nav.show div.ph-x {  /*Quando .show estiver ativo*/
-  visibility: visible;
-  opacity: 1;
-  left: 21rem; /* efeito do X subindo */
-}
+  nav.show div.ph-x {
+    /*Quando .show estiver ativo*/
+    visibility: visible;
+    opacity: 1;
+    left: 21rem;
+    /* efeito do X subindo */
+  }
 
 
 
   /* Seaction 1 */
   .x {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .d1 {
@@ -575,35 +583,44 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
     opacity: 0;
   }
 
-  .section_pictures_mobile{
-    height: 70rem;
-    background-color: red;
-    padding-top: 2rem;
-    contain: content;
+  .section_pictures_mobile {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    padding-top: 2rem; 
+    contain: content; 
   }
 
   .mySwiperMobile {
     height: 28rem;
     width: 19rem;
-    
+
   }
 
-  .swiper-wrapper {
-    
-  }  
+  .section_pictures_mobile_texts {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
 
+  .section_pictures_mobile_texts h2 {
+    color: hsl(210 6.0% 93.0%);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: .6rem;
+  }
+
+  .section_pictures_mobile_texts p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: hsl(210 6.0% 93.0%);
+  }
   
-
-
-  
-
-
 
   /* FORM */
 
-  .x3 {
-  }
-  
+  .x3 {}
+
   .form_wrapper {
     display: flex;
     flex-direction: column;

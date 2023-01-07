@@ -40,7 +40,7 @@
 }
 
 .on-scroll {
-  background: rgba(255, 255, 255, 0.096); 
+  background: rgba(255, 255, 255, 0.096);
   /* backdrop-filter: blur(1px); */
   /* -webkit-backdrop-filter: blur(1px);
   border-radius: 5px;
@@ -286,31 +286,11 @@ main {
       hsl(30, 79%, 13%, 1),
       rgba(255, 255, 255, 0) 20%);
 
-
-  height: 100vh;
-  /* display: flex; */
-
-}
-
-.form_wrapper {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
-
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; */
+  padding-bottom: 4rem;
 }
 
 .texts_header_form {
-  /* display: flex;
-  flex-direction: column; */
-
   font-family: 'Nunito Sans', sans-serif;
-
   color: hsl(210 6.0% 93.0%);
 }
 
@@ -330,96 +310,9 @@ main {
   margin-bottom: 1rem;
 }
 
-form {
-  /* display: flex;
-  flex-direction: column;
-  padding: 2rem 2rem; */
-
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.036);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0);
-}
-
-form h2 {
-  color: hsl(210 6.0% 93.0%);
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 2rem;
-
-}
-
-form input {
-  background: transparent;
-  padding-bottom: .4rem;
-  margin-bottom: 2rem;
-  outline: none;
-  border: 0;
-  width: 100%;
-  border-bottom: 1px solid #DDDDDD;
-  color: hsl(210 6.0% 93.0%);
-}
-
-form input:hover,
-form textarea:hover {
-  cursor: pointer;
-}
-
-form input::placeholder {
-  color: hsl(210 6.0% 93.0%);
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 300;
-}
-
-form input:focus {
-  border-color: hsl(252 56.0% 57.5%);
-  transition: 0.3s;
-}
-
-form textarea {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: hsl(210 6.0% 93.0%);
-}
-
-form textarea::placeholder {
-  color: hsl(210 6.0% 93.0%);
-  border-bottom: 1px solid #DDDDDD;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 300;
-}
-
-form textarea:focus::placeholder {
-  border-color: hsl(252 56.0% 57.5%);
-  transition: 0.3s;
-}
-
-form button {
-  background: hsl(252 40.1% 22.5%);
-  color: hsl(250 95.0% 76.8%);
-  border: none;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 5px;
-  /* margin-top: 1rem; */
-  transition: background-color 75ms ease;
-}
-
-form button:hover {
-  background-color: hsl(252 42.2% 26.2%);
-  cursor: pointer;
-}
-
 .section_pictures_mobile {
   display: none;
 }
-
-
 
 
 @media screen and (max-width: 760px) {
@@ -478,7 +371,6 @@ form button:hover {
     display: flex;
 
     justify-content: center;
-
 
     position: absolute;
     top: 0;
@@ -587,8 +479,8 @@ form button:hover {
     display: flex;
     flex-direction: column;
     /* height: 50rem; */
-    padding-top: 2rem; 
-    contain: content; 
+    padding-top: 2rem;
+    contain: content;
   }
 
   .mySwiperMobile {
@@ -643,29 +535,97 @@ form button:hover {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.096);
   }
-  
+
 
   /* FORM */
-
-  .x3 {
-    
-  }
-
-  .form_wrapper {
-    /* display: unset; */
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: flex-end; */
-  }
+  .x3 {}
 
   .texts_header_form {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .first_h2_texts_header_form {
-    /* text-align: center; */
+  form {
+    background: rgba(255, 255, 255, 0.036);
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
+
+  form h2 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: hsl(210 6.0% 93.0%);
+    padding-bottom: 1.2rem;
+  }
+
+  form input {
+    background: transparent;
+    padding-bottom: .4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #DDDDDD;
+    color: hsl(210 6.0% 93.0%);
+  }
+
+  form input:hover,
+  form textarea:hover {
+    cursor: pointer;
+  }
+
+  form input::placeholder {
+    color: hsl(210 6.0% 93.0%);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  form input:focus {
+    border-color: hsl(252 56.0% 57.5%);
+    transition: 0.3s;
+  }
+
+  form textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(210 6.0% 93.0%);
+  }
+
+  form textarea::placeholder {
+    color: hsl(210 6.0% 93.0%);
+    border-bottom: 1px solid #DDDDDD;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  form textarea:focus::placeholder {
+    border-color: hsl(252 56.0% 57.5%);
+    transition: 0.3s;
+  }
+
+  form button {
+    background: hsl(252 40.1% 22.5%);
+    color: hsl(250 95.0% 76.8%);
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    /* margin-top: 1rem; */
+    transition: background-color 75ms ease;
+  }
+
+  form button:hover {
+    background-color: hsl(252 42.2% 26.2%);
+    cursor: pointer;
+  }
+
+
+
 
 }
 

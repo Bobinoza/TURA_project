@@ -582,11 +582,13 @@ nav.show div.ph-x {  /*Quando .show estiver ativo*/
   }
 
   .mySwiperMobile {
-    height: 32rem;
+    height: 28rem;
     width: 19rem;
   }
 
-  
+  .swiper-wrapper {
+    box-sizing: content-box;
+  }  
 
   
 

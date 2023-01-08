@@ -97,7 +97,6 @@
 }
 
 
-
 /* MAIN */
 main {
   background-color: hsla(200, 7%, 9%, 1);
@@ -308,7 +307,6 @@ main {
   display: none;
 }
 
-
 @media screen and (max-width: 760px) {
   .ph-list {
     visibility: visible;
@@ -345,14 +343,19 @@ main {
     opacity: 0;
     visibility: hidden;
     /* top: -20rem; */
+
     left: -20rem;
     padding: 0;
+
+    transition: 0; /* ver se gerou resiltado !!!!!!!!!!!!!!!!!!!!!!!!!*/
   }
 
-  nav .menu ul {
+  nav .menu .menu-inner {
     /*Pra nao piscar, ficar desaparecido até que de fato eu clique em algo.*/
     display: none;
   }
+
+ 
 
   /* Mostrar Menu */
   nav.show .menu {
@@ -361,11 +364,8 @@ main {
     background-color: hsla(200, 7%, 9%, 1);
     height: 100vh;
     width: 100vw;
-
     display: flex;
-
     justify-content: center;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -387,6 +387,8 @@ main {
   nav.show .menu .menu-link {
     font-size: 2rem;
   }
+
+ 
 
   /*=== TOGGLE MENU ===*/
   .toggle {
@@ -421,8 +423,6 @@ main {
     left: 21rem;
     /* efeito do X subindo */
   }
-
-
 
   /* Seaction 1 */
   .x {
